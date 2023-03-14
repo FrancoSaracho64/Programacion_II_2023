@@ -1,2 +1,8 @@
 # Programacion_II_2023
-Integrantes del grupo: 1) SARACHO, Franco 2) SAN JUAN, Facundo 3) ZANDER, Matt 4) LOPEZ, Juan Cruz 5) FREYTES, Felipe
+
+Integrantes del grupo: 
+  1) FREYTES    Felipe 
+  2) LOPEZ      Juan Cruz  
+  3) SAN JUAN   Facundo 
+  4) SARACHO    Franco 
+  5) ZANDER     Matt
