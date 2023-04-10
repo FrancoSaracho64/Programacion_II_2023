@@ -22,8 +22,8 @@ char *reunionChinos (int);
 char *grafico_senales_inicializador(char[], char);
 char *graficoSenales(char[], char, int *, char *);
 /* Ejercicio 8*/
-void subconjuntosQueSumanNRec(int* conjunto, int tamanoConjunto, int* subconjunto, int tamanoSubconjunto, int sumaObjetivo, int indiceActual, int sumaActual);
-void subconjuntosQueSumanN(int* conjunto,int tamanoConjunto ,int sumaObjetivo);
+void subconjuntosQueSumanNRec(int*, int, int*, int, int, int, int);
+void subconjuntosQueSumanN(int*, int, int);
 /* Ejercicio 9*/
 bool divisiblePor7(int);
 /* Ejercicio 10*/
