@@ -3,6 +3,8 @@
 #include "FuncionesRecursivas.h"
 #include "Validaciones.h"
 #define TAMANIO_CADENA 25
+const int limSup = 2000000000;
+const int limInf = -2000000000;
 
 int main(){
     // Presentacion
@@ -17,13 +19,18 @@ int main(){
     
     //Pedimos el numero y le realizamos las validaciones correspondientes.
     do{
-        printf("Ingrese el primer numero: ");
-        fflush(stdin);
-        fgets(numeroTeclado, TAMANIO_CADENA, stdin);
-        entrada = numEnteros(numeroTeclado) && validarEnter(numeroTeclado);
-    }while (!entrada);
-    numero = pasaje_String_A_int(numeroTeclado);
-
+        do{
+            do{
+                printf("Ingrese el numero: ");
+                fflush(stdin);
+                fgets(numeroTeclado, TAMANIO_CADENA, stdin);
+                entrada = numEnteros(numeroTeclado) && validarEnter(numeroTeclado);
+            } while (!entrada);
+            entrada = cantCaracteres(numeroTeclado, 13);
+        } while (!entrada); 
+        numero = pasaje_String_A_int(numeroTeclado);
+        entrada = numeroRango(numero, limInf, limSup);
+    } while (!entrada);
     // Llamada a la funcion recursiva.
     bool multiplo_7 = divisiblePor7(numero);
 

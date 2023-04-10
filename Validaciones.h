@@ -77,21 +77,21 @@ bool esCero(int numero){
 /* Validad cantidad de elementos/caracteres de un String */
 bool cantCaracteres(char cadena[], int limite){
     bool estado = true;
-    if (cadena[0] == '-'){
-        if (strlen(cadena) > limite + 1){
-            printf("\n\n*******************************************************************************");
-            printf("\n                      ***ERROR***\n           La cadena de texto ingresada es demasiado pequeña.\n");
-            printf("*******************************************************************************\n\n");
-            estado = false;
+    // if (cadena[0] == '-'){
+    //     if (strlen(cadena) > limite + 1){
+    //         printf("\n\n*******************************************************************************");
+    //         printf("\n                      ***ERROR***\n           La cadena de texto ingresada es demasiado pequeña.\n");
+    //         printf("*******************************************************************************\n\n");
+    //         estado = false;
+    //     }
+    //  } else {
+    if (strlen(cadena) > limite){
+        printf("\n\n*******************************************************************************");
+        printf("\n                              ***ERROR***\n               La cadena de texto ingresada es demasiado grande.\n");
+        printf("*******************************************************************************\n\n");
+        estado = false;
         }
-    } else {
-        if (strlen(cadena) > limite){
-            printf("\n\n*******************************************************************************");
-            printf("\n                      ***ERROR***\n            La cadena de texto ingresada es demasiado grande.\n");
-            printf("*******************************************************************************\n\n");
-            estado = false;
-        }
-    }
+    // }
     return estado;
 }
 
