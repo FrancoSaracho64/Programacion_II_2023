@@ -22,7 +22,8 @@ char *reunionChinos (int);
 char *grafico_senales_inicializador(char[], char);
 char *graficoSenales(char[], char, int *, char *);
 /* Ejercicio 8*/
-//----
+void subconjuntosQueSumanNRec(int* conjunto, int tamanoConjunto, int* subconjunto, int tamanoSubconjunto, int sumaObjetivo, int indiceActual, int sumaActual);
+void subconjuntosQueSumanN(int* conjunto,int tamanoConjunto ,int sumaObjetivo);
 /* Ejercicio 9*/
 bool divisiblePor7(int);
 /* Ejercicio 10*/
@@ -268,7 +269,35 @@ char *graficoSenales(char cadena_HL[], char anterior, int *posicion, char *punte
 }
 /* ######################################################################################################################### */
 /* Ejercicio 8*/
+void subconjuntosQueSumanNRec(int* conjunto, int tamanoConjunto, int* subconjunto, int tamanoSubconjunto, int sumaObjetivo, int indiceActual, int sumaActual)
 
+    /*      CASO BASE cuando SumaObjetivo es igual a sumaActual, mostramos por pantalla el cunjunto*/
+{
+    if (sumaObjetivo == sumaActual) {
+        printf("{");
+        for (int i = 0; i < tamanoSubconjunto; i++) {
+            printf("%d", subconjunto[i]);
+            if (i < tamanoSubconjunto - 1) {
+                printf(", ");
+            }
+        }
+        printf("}\n");
+    }
+    else if (indiceActual < tamanoConjunto) {
+        // Agregamos el elemento actual al subconjunto y recursivamente lo evaluamos
+        subconjunto[tamanoSubconjunto] = conjunto[indiceActual];
+        subconjuntosQueSumanNRec(conjunto, tamanoConjunto, subconjunto, tamanoSubconjunto + 1, sumaObjetivo, indiceActual + 1, sumaActual + conjunto[indiceActual]);
+        // Quitamos el elemento actual del subconjunto y recursivamente lo evaluamos
+        subconjuntosQueSumanNRec(conjunto, tamanoConjunto, subconjunto, tamanoSubconjunto, sumaObjetivo, indiceActual + 1, sumaActual);
+    }
+}
+
+void subconjuntosQueSumanN(int* conjunto,int tamanoConjunto ,int sumaObjetivo)
+{
+    int* subconjunto = (int*)malloc(tamanoConjunto * sizeof(int)); // Asignamos memoria dinámica para el array subconjunto
+    subconjuntosQueSumanNRec(conjunto, tamanoConjunto, subconjunto, 0, sumaObjetivo, 0, 0);
+    free(subconjunto); // Liberamos la memoria dinámica asignada
+}
 /* ######################################################################################################################### */
 /* Ejercicio 9*/
 // Funcion que se encarga de devolver si un numero recibido por parametro es o no multiplo de 7.
