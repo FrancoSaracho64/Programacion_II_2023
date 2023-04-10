@@ -335,8 +335,8 @@ int *Explosion (int multiplicador, int b, int *cantidad) {
         //sumamos la cantidad de elementos del arreglo
         *cantidad += 1;
 
-        free(auxiliarN1);
-        free(auxiliarN2);  
+        //  free(auxiliarN1);
+        //  free(auxiliarN2);  
 
         //retornamos el ultimo puntero generado, que contiene los elementos de los resultados de ambas llamadas recursivas
         return auxiliar;
