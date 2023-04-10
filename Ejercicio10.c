@@ -61,7 +61,7 @@ int main () {
     printf("]\n");
     printf("*********************************************************\n");
     fflush(stdin);
-    free(res);
+    //  free(res);
     printf("\n\n Presione ENTER para finalizar la ejecucion...");
     getchar();
     return 0;
