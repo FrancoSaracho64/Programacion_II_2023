@@ -108,6 +108,7 @@ int main(){
         //Si resultado es False, la lista 2 no es multiplo de la lista 1
         printf("La lista 2 no es multiplo de la lista 1 \n");
     }
+    printf("Presione ENTER para finalizar el programa...");
     getchar();
     return 0;
 }
