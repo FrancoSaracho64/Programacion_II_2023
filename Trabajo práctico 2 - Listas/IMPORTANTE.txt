@@ -1,0 +1,11 @@
+A tener en cuenta:
+Dentro del 'task.json' se deben importar los siguientes archivos:
+     **LISTAS	
+	//"${fileDirname}\\listas_arreglos.c",
+        //"${fileDirname}\\listas_punteros.c",
+        //"${fileDirname}\\listas_cursores.c",
+-------------------------------------------------------------------
+     **PARA RESOLVER EL TRABAJO PRACTICO:
+        "${fileDirname}\\Validaciones.c",
+        "${fileDirname}\\funcionesEjercicios.c",
+        "${fileDirname}\\tipo_elemento.c",
