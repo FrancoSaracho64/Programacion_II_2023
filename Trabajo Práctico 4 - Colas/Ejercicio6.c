@@ -17,7 +17,7 @@ int main(){
 
     //Complejidad
     printf("------------------------------------------------------------------------------\nCOMPLEJIDAD ALGORITMICA: \n");
-    printf("La complejidad algoritmica de este ejercicio es del tipo O(n^2) ya que... .");
+    printf("La complejidad algoritmica de este ejercicio es del tipo O(n^2)  ya que, en el peor de los casos se recorrera la cola por cada elemento que tiene la pila .");
     printf("\n------------------------------------------------------------------------------\n\n\n");
 
     //Funcion...
