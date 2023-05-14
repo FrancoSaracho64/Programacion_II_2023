@@ -15,7 +15,8 @@ int main(){
 
     //Complejidad algoritmica
     printf("------------------------------------------------------------------------------\nCOMPLEJIDAD ALGORITMICA: \n");
-    printf(".");
+    printf("La complejidad algoritmica de este ejercicio seria O(n²), ya que en cierto punto del codigo podemos encontrar");
+    printf("3 whiles anidados dando asi esta complejidad");
     printf("\n------------------------------------------------------------------------------\n\n\n");
 
     //Funcion...
