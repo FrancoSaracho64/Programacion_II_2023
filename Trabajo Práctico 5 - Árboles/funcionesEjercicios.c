@@ -72,7 +72,7 @@ void ejercicio2C_1(Lista lista, NodoArbol nodo, TipoElemento elem, TipoElemento 
 void ejercicio2D(){
     //Complejidad algoritmica
     printf("-------------------------------------------------------------------------------------------------\nCOMPLEJIDAD ALGORITMICA: \n");
-    printf(" la complejidad algorítmica de las funciones a,b,c en el peor de los casos es O(n  log₂ n) \n ya que  se multiplica n que es la cantidad de niveles que tiene el árbol \n y  log₂ n  porque por cada llamada recursiva el problema se divide en dos  (log₂) \n y el tiempo de cada nivel es n. esto quedaría O(n  log₂ n). ");
+    printf(" la complejidad algoritmica de las funciones a,b,c en el peor de los casos es O(n  log(2) n) \n ya que  se multiplica n que es la cantidad de niveles que tiene el arbol \n y  log(2) n  porque por cada llamada recursiva el problema se divide en dos  (log(2)) \n y el tiempo de cada nivel es n. esto quedaria O(n  log(2) n). ");
     printf("\n-------------------------------------------------------------------------------------------------\n\n\n");
 }
 
