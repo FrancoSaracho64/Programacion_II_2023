@@ -119,7 +119,7 @@ int main(){
     printf("\n");
 
     printf(" *** Conclusion: ***\n ");
-    printf(" El arbol AVL la altura max coincide con la altura min. La altura del arbol depende de la cantidad\n de nodos que contiene, no de sus valores.\n");
+    printf(" Se observa que el promedio de alturas de los dos tipos de arboles va aumentando segun la cantidad de nodos ingresados \n y la diferencia entre las alturas maximas y minimas en avl son iguales o diferencia de 1. \n En el tipo abb la diferencia entre los extremos va variando segun la cantidad de nodos, arboles y en que orden se generan.\n");
 
     getchar();
 }
