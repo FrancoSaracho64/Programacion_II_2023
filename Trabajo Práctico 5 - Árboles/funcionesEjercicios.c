@@ -486,7 +486,7 @@ bool hojasMismoNivelNario(ArbolBinario arbol){
 void hojasMismoNivelNario_int(NodoArbol nodo, int* nivel_primerHoja, bool *primerHoja_Encontrada, bool* resultado, int nivel_hojaActual){
     if (!a_es_rama_nula(nodo)) { 
         if ((n_hijoizquierdo(nodo) == NULL)){
-            if (!primerHoja_Encontrada){
+            if (!*primerHoja_Encontrada){
                 *primerHoja_Encontrada = true;
                 *nivel_primerHoja = nivel_hojaActual;
             }
