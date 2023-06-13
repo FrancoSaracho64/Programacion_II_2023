@@ -418,7 +418,14 @@ void carga_datos(TablaHash t){
 
     // Pedimos que ingrese la fecha
     fecha_int = pedir_fecha();
-    Lista listaDatos = l_crear();
+    Lista listaDatos;
+
+    TipoElemento auxiliar = th_recuperar(t, fecha_int);
+    if (auxiliar == NULL){
+        listaDatos = l_crear();
+    } else {
+        listaDatos = (Lista)auxiliar->valor;
+    }    
     do{
         struct Vacunado *punteroPersona; 
         punteroPersona = (struct Vacunado*) malloc(sizeof(struct Vacunado));
