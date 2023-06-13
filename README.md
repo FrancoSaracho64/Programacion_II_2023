@@ -7,4 +7,4 @@ Integrantes del grupo:          // Legajo
   4) ZANDER     Matt            -- 182882
 
 
-  **** 0) LOPEZ, Juan Cruz (Legajo: 182766)    //    AUSENTE --> TP_5
+  **** 0) LOPEZ, Juan Cruz (Legajo: 182766)    //    AUSENTE --> TP_5 y TP_6
