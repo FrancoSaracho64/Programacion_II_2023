@@ -1,0 +1,50 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe compilar archivo activo",
+            "command": "C:/MinGW/bin/gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                //COLAS
+                "${fileDirname}\\TADs_y_extras/colas_punteros.c",
+                "${fileDirname}\\TADs_y_extras/colas_utilidades.c",
+                //PILAS
+                "${fileDirname}\\TADs_y_extras/pilas_punteros.c",
+                "${fileDirname}\\TADs_y_extras/pilas_utilidades.c",
+                //LISTAS
+                "${fileDirname}\\TADs_y_extras/listas_cursores.c",
+                //ARBOLES
+                "${fileDirname}\\TADs_y_extras/nodo.c",
+                "${fileDirname}\\TADs_y_extras/arbol-binario.c",
+                "${fileDirname}\\TADs_y_extras/arbol-Utilidades.c",
+                "${fileDirname}\\TADs_y_extras/arbol-avl.c",
+                "${fileDirname}\\TADs_y_extras/arbol-binario-busqueda.c",
+                //HASH
+                "${fileDirname}\\TADs_y_extras/tabla_hash_lista_colisiones.c",
+                //Extras...
+                "${fileDirname}\\funcionesEjercicios.c",
+                "${fileDirname}\\TADs_y_extras/Validaciones.c",
+                "${fileDirname}\\TADs_y_extras/tipo_elemento.c",
+                
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                ""
+            ],
+            "options": {
+                "cwd": "C:/MinGW/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarea generada por el depurador."
+        }
+    ],
+    "version": "2.0.0"
+}

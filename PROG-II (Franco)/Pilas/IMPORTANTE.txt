@@ -1,0 +1,12 @@
+A tener en cuenta:
+Dentro del 'task.json' se deben importar los siguientes archivos:
+     **PILAS	
+	${fileDirname}\\pilas_arreglos.c",
+        //"${fileDirname}\\pilas_punteros.c",
+-------------------------------------------------------------------
+     **PARA RESOLVER EL TRABAJO PRACTICO:
+        "${fileDirname}\\pilas_utilidades.c",
+        "${fileDirname}\\Validaciones.c",
+        "${fileDirname}\\funcionesEjercicios.c",
+        "${fileDirname}\\tipo_elemento.c",
+        "${fileDirname}\\funcionesMenu_Ejercicio2.c",
