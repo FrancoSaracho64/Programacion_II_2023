@@ -229,6 +229,73 @@ int l_elementoMayor(Lista lista){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+bool l_esta_ordenadaAscendentemente(Lista lista){
+    bool ordenada = true;
+    int posActual = lista->inicio;
+    int posSiguiente;
+    int contador = 1;
+
+    while (contador < lista->cantidad && ordenada){
+        posSiguiente = lista->cursor[posActual].siguiente;
+        if (lista->cursor[posActual].datos->clave > lista->cursor[posSiguiente].datos->clave){
+            ordenada = false;
+        }
+        posActual = posSiguiente;
+        contador++;
+    }
+    return ordenada;
+}
+
+bool l_esta_ordenadaDecrecientemente(Lista lista){
+    bool ordenada = true;
+    int posActual = lista->inicio;
+    int posSiguiente;
+    int contador = 1;
+
+    while (contador < lista->cantidad && ordenada){
+        posSiguiente = lista->cursor[posActual].siguiente;
+        if (lista->cursor[posActual].datos->clave < lista->cursor[posSiguiente].datos->clave){
+            ordenada = false;
+        }
+        posActual = posSiguiente;
+        contador++;
+    }
+    return ordenada;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //---------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------
 // Rutinas del ITERADOR

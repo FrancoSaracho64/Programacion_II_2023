@@ -34,6 +34,10 @@ void l_mostrarLista(Lista lista);
 
 int l_elementoMayor(Lista lista);
 
+bool l_esta_ordenadaAscendentemente(Lista lista);
+
+bool l_esta_ordenadaDecrecientemente(Lista lista);
+
 // Funciones de iterador de la lista
 Iterador iterador(Lista lista);
 
